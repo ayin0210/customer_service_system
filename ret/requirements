@@ -1,0 +1,16 @@
+How to query the answer, the final product can be deploied in one computer or 
+serveral within or not the same computer as the JAVA client.
+
+-- install dependency --
+pip install synonyms mysql-connector-python
+
+-- run --
+python ret.py
+
+-- usage --
+http://localhost:44442/?q=<unquoted string>&pid=<unquoted string>&compid=<unquoted string>
+  -- q      : query string
+  -- pid    : product id
+  -- compid : company id
+  -- <unquoted string> : string without quotes or double quotes
+  -- example           : localhost:44442/?q=你好进水了&pid=product_x&compid=x
